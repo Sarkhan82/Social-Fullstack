@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // ROUTES
-app.use("api/user", userRoutes);
+app.use("/api/user", userRoutes);
 
 // SERVER
 app.listen(process.env.PORT, () => {
